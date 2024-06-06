@@ -106,11 +106,11 @@
                     return;
                 }
                  // Log form data to console
-                 var formData = new FormData(this);
-                console.log('Form Data:');
-                formData.forEach((value, key) => {
-                    console.log(key + ": " + value);
-                });
+                //  var formData = new FormData(this);
+                // console.log('Form Data:');
+                // formData.forEach((value, key) => {
+                //     console.log(key + ": " + value);
+                // });
 
                 // If all fields are valid, proceed with AJAX submission
                 $.ajax({

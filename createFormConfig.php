@@ -1,6 +1,6 @@
 <?php
-require 'dbConnection.php'; // Include the database connection file
-require 'functions.php'; // Include the functions file
+require_once 'dbConnection.php'; // Include the database connection file
+require_once 'functions.php'; // Include the functions file
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $companyName = $_POST['name'];

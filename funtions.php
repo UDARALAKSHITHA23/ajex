@@ -6,8 +6,8 @@ function insertCompany($companyName, $country, $phone, $email,$conn) {
     error_log("Country: $country");
     error_log("Phone: $phone");
     error_log("Email: $email");
-    $stmt = $conn->prepare("INSERT INTO companys (company_name, country, phone, email) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $companyName, $country, $phone, $email);
+    $stmt = $conn->prepare("INSERT INTO companys (company_name, country, phone, email) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $companyName, $country, $phone, $email);
 
     // Execute the statement
     if ($stmt->execute()) {
